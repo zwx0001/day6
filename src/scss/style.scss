@@ -31,7 +31,7 @@
     margin-top: pxTorem(15px);
     .item {
         width: 90%;
-        height: pxTorem(100px);
+        height: pxTorem(120px);
         border: solid 2px #ccc;
         border-radius: pxTorem(10px);
         margin: pxTorem(15px) auto;
@@ -46,13 +46,28 @@
             color: #fff;
             padding: 0 pxTorem(15px);
             @include sizing;
+            border-top-left-radius: pxTorem(10px);
+            border-top-right-radius: pxTorem(10px);
         }
     }
     .tic1 {
         p:nth-child(1) {
             background: #FD6060;
-            border-top-left-radius: pxTorem(10px);
-            border-top-right-radius: pxTorem(10px);
+        }
+    }
+    .tic2 {
+        p:nth-child(1) {
+            background: #5686F4;
+        }
+    }
+    .tic3 {
+        p:nth-child(1) {
+            background: #965DF5;
+        }
+    }
+    .tic4 {
+        p:nth-child(1) {
+            background: #4BC670;
         }
     }
 }
