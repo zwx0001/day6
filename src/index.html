@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="tab">
+            <p class="active">未使用</p>
+            <p>已使用</p>
+            <p>已过期</p>
+        </div>
+        <div class="content">
+            <div class="item tic1">
+                <p><span>$5</span><span>满减券</span></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <script src="./libs/zepto.js"></script>
+    <script src="./libs/flexible.js"></script>
+    <script>
+        $('.tab p').click(function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+    </script>
+</body>
+
+</html>
